@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Davaleba12</string>
+    <string name="marble_flower_vase">Marble Flower Vase</string>
+    <string name="_4_9">4.9</string>
+    <string name="_8_567">8,567</string>
+    <string name="_8_567_sold">8,567 sold</string>
+    <string name="_88_00">$88.00</string>
+    <string name="_4_7_7_376_reviews">4.7 (7,376 reviews)</string>
+    <string name="description">Description</string>
+    <string name="color">Color</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium</string>
+    <string name="quantity">Quantity</string>
+    <string name="_1">1</string>
+    <string name="total_price">Total price</string>
+    <string name="_160">160$</string>
+    <string name="_160_00">160.00$</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="search">Search</string>
+</resources>

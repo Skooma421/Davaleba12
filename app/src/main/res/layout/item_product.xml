@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="25dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/itemImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/rounder_corner"
+        android:backgroundTint="#35383f"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/itemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/marble_flower_vase"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/itemImage"
+        app:layout_constraintTop_toBottomOf="@id/itemImage" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/itemRating"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/star_rating"
+        app:layout_constraintStart_toStartOf="@id/itemTitle"
+        app:layout_constraintTop_toBottomOf="@id/itemTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/itemRatingScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/_4_9"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@id/itemRating"
+        app:layout_constraintStart_toEndOf="@id/itemRating"
+        app:layout_constraintTop_toTopOf="@id/itemRating"
+        tools:ignore="SmallSp" />
+
+    <View
+        android:id="@+id/itemSeparator"
+        android:layout_width="1dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="7dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/itemRatingScore"
+        app:layout_constraintStart_toEndOf="@id/itemRatingScore"
+        app:layout_constraintTop_toTopOf="@id/itemRatingScore" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/itemNumbersSold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:background="@drawable/rounded_corner_small"
+        android:backgroundTint="#35383f"
+        android:padding="5dp"
+        android:text="@string/_8_567_sold"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@id/itemSeparator"
+        app:layout_constraintStart_toEndOf="@id/itemSeparator"
+        app:layout_constraintTop_toTopOf="@id/itemSeparator"
+        tools:ignore="SmallSp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/itemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="@string/_88_00"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/itemRating"
+        app:layout_constraintTop_toBottomOf="@id/itemRating" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

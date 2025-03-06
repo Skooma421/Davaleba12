@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181a20">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/item_image"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:background="#35383f"
+        android:src="@drawable/img_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/arrowIcon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/marble_flower_vase"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/arrowIcon"
+        app:layout_constraintTop_toBottomOf="@id/item_image" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="18dp"
+        android:src="@drawable/favorite"
+        app:layout_constraintBottom_toBottomOf="@id/item_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_numbers_sold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corner_small"
+        android:backgroundTint="#35383f"
+        android:padding="8dp"
+        android:text="@string/_8_567_sold"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@id/item_title"
+        app:layout_constraintTop_toBottomOf="@id/item_title"
+        tools:ignore="SmallSp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/itemRating"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/star_rating"
+        app:layout_constraintBottom_toBottomOf="@id/item_numbers_sold"
+        app:layout_constraintStart_toEndOf="@id/item_numbers_sold"
+        app:layout_constraintTop_toTopOf="@id/item_numbers_sold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/itemReviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/_4_7_7_376_reviews"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@id/itemRating"
+        app:layout_constraintStart_toEndOf="@id/itemRating"
+        app:layout_constraintTop_toTopOf="@id/itemRating"
+        tools:ignore="SmallSp" />
+
+    <View
+        android:id="@+id/itemSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="18dp"
+        android:background="#35383f"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_numbers_sold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/itemDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/description"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/itemSeparator"
+        app:layout_constraintTop_toBottomOf="@id/itemSeparator" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/itemDescriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/lorem_ipsum"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="@id/itemSeparator"
+        app:layout_constraintStart_toStartOf="@id/itemDescription"
+        app:layout_constraintTop_toBottomOf="@id/itemDescription" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/itemColorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/color"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/itemDescriptionText"
+        app:layout_constraintTop_toBottomOf="@id/itemDescriptionText" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/itemColorChange"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounder_corner"
+        android:backgroundTint="@color/black"
+        app:layout_constraintStart_toStartOf="@id/itemColorText"
+        app:layout_constraintTop_toBottomOf="@id/itemColorText" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/itemColorChange1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rounder_corner"
+        android:backgroundTint="#29393f"
+        app:layout_constraintBottom_toBottomOf="@id/itemColorChange"
+        app:layout_constraintStart_toEndOf="@id/itemColorChange"
+        app:layout_constraintTop_toTopOf="@id/itemColorChange" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/itemColorChange3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rounder_corner"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/itemColorChange"
+        app:layout_constraintStart_toEndOf="@id/itemColorChange1"
+        app:layout_constraintTop_toTopOf="@id/itemColorChange" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/quantityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/quantity"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/itemColorChange"
+        app:layout_constraintTop_toBottomOf="@id/itemColorChange" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/itemMinus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/half_round_1"
+        android:padding="12dp"
+        android:src="@drawable/remove"
+        app:layout_constraintBottom_toBottomOf="@id/quantityText"
+        app:layout_constraintStart_toEndOf="@id/quantityText"
+        app:layout_constraintTop_toTopOf="@id/quantityText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/itemCount"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#35383f"
+        android:gravity="center"
+        android:minWidth="50dp"
+        android:text="@string/_1"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/itemMinus"
+        app:layout_constraintStart_toEndOf="@id/itemMinus"
+        app:layout_constraintTop_toTopOf="@id/itemMinus" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/itemPlus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/half_round"
+        android:backgroundTint="#35383f"
+        android:padding="12dp"
+        android:src="@drawable/add"
+        app:layout_constraintBottom_toBottomOf="@id/itemCount"
+        app:layout_constraintStart_toEndOf="@id/itemCount"
+        app:layout_constraintTop_toTopOf="@id/itemCount" />
+
+    <View
+        android:id="@+id/itemSeparator1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:background="#35383f"
+        app:layout_constraintTop_toBottomOf="@id/itemMinus" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/itemTotalPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/total_price"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/itemSeparator1"
+        app:layout_constraintTop_toBottomOf="@id/itemSeparator1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/itemTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_160_00"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/itemTotalPriceText"
+        app:layout_constraintTop_toBottomOf="@id/itemTotalPriceText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/addToCartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounder_corner"
+        android:backgroundTint="@color/white"
+        android:padding="16dp"
+        android:paddingStart="70dp"
+        android:paddingEnd="50dp"
+        android:text="@string/add_to_cart"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/itemTotalPrice"
+        app:layout_constraintEnd_toEndOf="@id/itemSeparator1"
+        app:layout_constraintTop_toBottomOf="@id/itemSeparator1"
+        app:layout_constraintTop_toTopOf="@id/itemTotalPriceText" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bagIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bag"
+        app:layout_constraintTop_toTopOf="@id/addToCartButton"
+        app:layout_constraintBottom_toBottomOf="@id/addToCartButton"
+        app:layout_constraintEnd_toStartOf="@id/addToCartButton"
+        android:layout_marginEnd="-65dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
